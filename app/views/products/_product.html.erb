@@ -1,0 +1,14 @@
+<tr>
+  <td class="product">
+    <span class="content"><%= link_to product.name, product_path(product.id) %></span>
+  </td>
+  <% if user_signed_in? %>
+  <td>
+    <%= link_to "delete", product, :method => :delete,
+                                   :confirm => "You sure?",
+                                   :title => product.name  %>
+  </td>
+  <br />
+  <% end %>
+</tr>
+
