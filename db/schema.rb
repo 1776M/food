@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110710092216) do
+ActiveRecord::Schema.define(:version => 20110710151729) do
 
   create_table "places", :force => true do |t|
     t.string   "phone"
@@ -26,6 +26,22 @@ ActiveRecord::Schema.define(:version => 20110710092216) do
 
   add_index "places", ["created_at"], :name => "index_places_on_created_at"
   add_index "places", ["user_id"], :name => "index_places_on_user_id"
+
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.decimal  "price"
+    t.string   "diet"
+    t.string   "description"
+    t.integer  "calories"
+    t.integer  "fat"
+    t.integer  "carbs"
+    t.integer  "protein"
+    t.integer  "satfat"
+    t.integer  "sugar"
+    t.integer  "salt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false

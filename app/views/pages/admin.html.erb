@@ -1,0 +1,9 @@
+<h1>This is the admin page where the products can be added</h1>
+
+<% if user_signed_in? %>
+  <% if @products.count < 1 %> 
+      <%= render 'shared/product_form' %>
+  <% else %>
+      <%= @products.count %>
+  <% end %>
+<% end %>

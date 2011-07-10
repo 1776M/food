@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  price: 9.99
+  diet: MyString
+  description: MyString
+  calories: 1
+  fat: 1
+  carbs: 1
+  protein: 1
+  satfat: 1
+  sugar: 1
+  salt: 1
+
+two:
+  name: MyString
+  price: 9.99
+  diet: MyString
+  description: MyString
+  calories: 1
+  fat: 1
+  carbs: 1
+  protein: 1
+  satfat: 1
+  sugar: 1
+  salt: 1

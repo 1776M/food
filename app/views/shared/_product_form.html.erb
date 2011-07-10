@@ -1,0 +1,42 @@
+<%= form_for @product do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :diet %><br />
+    <%= f.text_field :diet %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :calories %><br />
+    <%= f.text_field :calories %>
+  </div>
+  <div class="field">
+    <%= f.label :fat %><br />
+    <%= f.text_field :fat %>
+  </div>
+  <div class="field">
+    <%= f.label :satfat %><br />
+    <%= f.text_field :satfat %>
+  </div>
+  <div class="field">
+    <%= f.label :sugar %><br />
+    <%= f.text_field :sugar %>
+  </div>
+  <div class="field">
+    <%= f.label :salt %><br />
+    <%= f.text_field :salt %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>
