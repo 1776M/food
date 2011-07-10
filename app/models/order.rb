@@ -6,5 +6,6 @@ class Order < ActiveRecord::Base
 
       validates :number, :presence => true
       validates :total_price, :presence => true
-      validates :user_id, :presence => true	
+      validates :user_id, :presence => true
+	
 end
