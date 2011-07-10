@@ -9,4 +9,6 @@
   <% end %>
 <% end %>
 <br />
-<%= render @products %>
+<% if user_signed_in? %>
+ <%= render @products %>
+<% end %>
