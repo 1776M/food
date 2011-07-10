@@ -9,5 +9,6 @@ class User < ActiveRecord::Base
 
   has_one :place, :dependent => :destroy
   has_many :orders, :dependent => :destroy
-  
+  has_one :cart, :dependent => :destroy
+
 end
