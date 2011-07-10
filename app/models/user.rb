@@ -8,6 +8,6 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
   has_one :place, :dependent => :destroy
-
+  has_many :orders, :dependent => :destroy
 
 end
