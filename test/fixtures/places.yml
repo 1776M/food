@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  phone: 
+  company: 
+  address1: 
+  address2: 
+  address3: 
+  postcode: MyString
+
+two:
+  phone: 
+  company: 
+  address1: 
+  address2: 
+  address3: 
+  postcode: MyString

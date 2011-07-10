@@ -1,1 +1,10 @@
-<h1>This is the home page</h1>
+<h1>This is the home page where the details need to be added</h1>
+
+<% if user_signed_in? %>
+  <% if @places.postcode=='' %> 
+      <%= render 'shared/place_form' %>
+  <% else %>
+      <%= @places.postcode %>
+      <%= link_to "Edit address", edit_place_path(@places.id) %>
+  <% end %>
+<% end %>

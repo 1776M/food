@@ -1,9 +1,12 @@
 class PagesController < ApplicationController
 
-  def home
+  def about
   end
 
-  def about
+  def home
+       @title = 'address'
+       @place = Place.new if user_signed_in?
+       @places = current_user.place if user_signed_in?     
   end
 
 end

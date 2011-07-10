@@ -1,5 +1,9 @@
-Food::Application.routes.draw do
-  devise_for :users
+Food::Application.routes.draw do 
+    resources :places
 
-   root :to => "pages#home"
+    devise_for :users
+
+    match '/about',   :to => 'pages#about'
+
+    root :to => "pages#home"
 end
