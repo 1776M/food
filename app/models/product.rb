@@ -3,6 +3,8 @@ class Product < ActiveRecord::Base
   	attr_accessible :name, :price, :diet, :description, :calories, :fat, :carbs, :protein,
 			  :satfat, :sugar, :salt
 
+	belongs_to :order
+	belongs_to :cart
 
 	validates :name, :presence => true
        validates :price, :presence => true
