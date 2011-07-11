@@ -1,4 +1,6 @@
 Food::Application.routes.draw do 
+  get "carts/new"
+
   get "products/new"
 
     resources :places
